@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;500;600&display=swap');
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "./assets/sass/rtl.scss";
+html, body { height: 100%; }
+body { margin: 0; font-family: "Tajawal", "Helvetica Neue", sans-serif; }
+.rtl{
+    font-family:  "Tajawal", sans-serif !important;
+}
+// colors
+.text-primary{
+    color: #FF9C00 !important;
+}
+
+// backgrounds
+.light-background{
+    background-color: #F9F2EF !important;
+}
+
+.orange-bg{
+    background-color: #FF9C00;
+}
+
+.bg-light-grey{
+    background-color: #D9D9D9;
+}
+
+.bg-lighter{
+    background-color: #F4f4f4;
+  
+}
+// buttons
+.btn-orange-outline{
+    border: 1px solid #f7d9cd;
+&:hover{
+    background-color: #f7d9cd;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px 0px grey;
+}
+&:active{
+    background-color: #f7d9cd;
+    color: white;
+}
+}
+
+.btn-orange{
+    background-color: #FFE0AF;
+
+}
+// texts
+.fs-10{
+    font-size: 10px !important;
+}
+
+.fs-11{
+    font-size: 11px !important;
+}
+
+.fs-12{
+    font-size: 12px !important;
+}
+
+.fs-13{
+    font-size: 13px !important;
+}
+
+.fs-14{
+    font-size: 14px !important;
+}
+
+.fs-15{
+    font-size: 15px !important;
+}
+
+.fs-16{
+    font-size: 16px !important;
+}
+
+.fs-18{
+    font-size: 18px !important;
+}
+
+.fs-20{
+    font-size: 20px !important;
+}
+
+// customized
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.rounded-bottom{
+    border-bottom-left-radius: var(--bs-border-radius-lg);
+    border-bottom-right-radius: var(--bs-border-radius-lg);
+}
+
+.vw-50{
+    @media screen and (min-width:1000) {
+        width: 50vw ;
+    }
+  
+}

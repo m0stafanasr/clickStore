@@ -1,0 +1,69 @@
+.first-banner{
+    background-image: url("../../../../assets/images/banner1.svg");
+    background-size: 100% 100%;
+    background-position: center;
+    height: 45vh;
+    @media screen and (max-width:450px ) {
+       background-repeat: no-repeat;
+        height: 30vh;
+    }
+    @media screen and (min-width:700px) and (max-width: 1024px) {
+        height: 25vh;
+    }
+}
+
+.card-item {
+    height: 100%; /* Ensure the column stretches to its full height */
+}
+
+.card-item > .d-flex {
+    height: 100%; /* Make the card content take the full height */
+}
+
+.img-container img {
+    width: 145px;
+    max-width: 100%;
+    object-fit: contain; 
+    height: 100%;
+}
+
+
+.label-container{
+    height: 38px;
+    overflow: hidden;      
+    white-space: nowrap;   
+    text-overflow: ellipsis;
+}
+.img-container{
+    height: 150px !important;
+}
+// label {
+//     margin-top: auto; 
+// }
+
+.star-icon{
+    color: rgba(255,156,0, var(--opacity,100%));
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+.rank{
+    position: absolute;
+    background: #ffffff;
+    bottom: 5%;
+    left: 2%;
+}
+
+.search-btn{
+    position: absolute;
+   left: auto ;
+   right  :3px;
+    bottom: 2px;
+}
+
+.description{
+    height: 85px ;
+    overflow: hidden;      
+    white-space: nowrap;   
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,18 @@
+:root{
+.mat-mdc-dialog-surface{
+    background-color: white;
+}
+}
+
+.star-icon{
+    color: rgba(255,156,0, var(--opacity,100%));
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+.rank{
+    position: absolute;
+    background: #ffffff;
+    bottom: 5%;
+    left: 2%;
+}

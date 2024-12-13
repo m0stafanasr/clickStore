@@ -1,0 +1,36 @@
+.mat-elevation-z8 {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  /* Set header cell text color */
+  .mat-header-cell {
+    background-color: #f5f5f5; /* Optional: Light gray for header background */
+    color: black !important;  /* Black text color for headers */
+    font-weight: bold;
+  }
+  
+  /* Set data cell text color */
+  .mat-cell {
+    color: black !important;
+  }
+  
+  /* Optional: Customize the paginator colors */
+  .mat-paginator {
+    background-color: white !important; /* Paginator background color */
+  }
+  
+  .mat-paginator-range-label,
+  .mat-paginator-icon {
+    color: black !important; /* Paginator text and icon color */
+  }
+
+  .mat-mdc-row, .mat-mdc-header-cell {
+    color: rgb(0, 0, 0) !important;
+  }
+ 
+    .product-image{
+        height: 100px !important; 
+        width: 100px !important;
+    }
+  

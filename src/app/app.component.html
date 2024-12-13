@@ -1,0 +1,11 @@
+<main [dir]="isArabic?'rtl':'ltr'" [ngClass]="isArabic?'rtl':'ltr'">
+<router-outlet></router-outlet>
+</main>
+<ngx-spinner 
+  bdColor="rgba(0, 0, 0, 0.8)" 
+  size="medium" 
+  color="#fff" 
+  type="ball-clip-rotate" 
+  [fullScreen]="true">
+ <img src="assets/images/Spinner.svg">
+</ngx-spinner>

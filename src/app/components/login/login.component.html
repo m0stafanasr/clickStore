@@ -1,0 +1,37 @@
+<div class="container-fluid light-background vh-100 position-relative">
+    <div class="position-absolute end-0 top-0 p-2 " (click)="changeLang()">
+      <button class="btn orange-bg fs-16 fw-bold text-white">{{"currentLang"|translate}} </button>  
+    </div>
+    <div class="row py-5">
+        <div class="col-12 d-inline-flex justify-content-center align-items-end">
+            <img src="../../../assets/images/click.svg">
+            <h2 class=" text-primary fw-bold mb-0">{{"clickStore"|translate}}</h2>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="card col-10 col-md-6 col-lg-4 rounded-4 bg-white d-flex justify-content-center" [@fadeIn]>
+            <div class="card-body row d-flex flex-column align-items-center">
+                <div class="col-12 text-center">
+                    <h3 class="fw-bold ">{{"common.signIn"|translate}}</h3>
+                </div>
+                <div class="col-12 text-center py-3">
+                    <label class="fs-16">{{"common.signWithEmail"|translate}}</label>
+                </div>
+                <div class="my-2 col-lg-10 col-md-10 col-sm-12">
+                    <input class="form-control"  [(ngModel)]="userName" #user="ngModel" name="user" [placeholder]="'common.userName'|translate">
+                </div>
+                <div class="my-2 col-lg-10 col-md-10 col-sm-12">
+                    <input class="form-control" type="password" [(ngModel)]="password" #pass="ngModel" name="pass" [placeholder]="'common.password'|translate">
+                </div>
+                <div *ngIf="err" class="col-12">
+                   <label class="mx-5 text-danger fs-14"> {{err|translate}}</label>
+                </div>
+                <div class="col-12 my-2 d-flex justify-content-center">
+                    <button class="btn btn-warning orange-bg text-white fs-16" (click)="login(userName, password)">
+                        {{"common.signIn"|translate}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

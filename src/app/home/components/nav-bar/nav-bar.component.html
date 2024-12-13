@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg  bg-white border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand d-inline-flex"><img class="d-flex align-items-start" width="20" src="../../../../assets/images/click.svg">
+         <label class="mb-0 align-self-end "> {{"clickStore"|translate}}</label> 
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse postion-relative" id="navbarNav">
+        <ul class="navbar-nav d-inline-flex justify-content-between w-100">
+            <div class="d-lg-inline-flex">
+          <li class="nav-item cursor-pointer" >
+            <a class="nav-link active rounded-4 cursor-pointer" routerLink="/home" aria-current="page">{{"main.Home"|translate}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cursor-pointer rounded-4"  (click)="logout()">{{"common.logOut"|translate}}</a>
+          </li></div>
+          <div class="d-inline-flex justify-content-between">
+          <li class="nav-item d-flex mx-1">
+            <a class="nav-link px-2 cursor-pointer rounded-4 btn-orange-outline" >
+                <label class="cursor-pointer px-1">{{"main.cart"|translate}} </label>
+                <img width="20" src="../../../../assets/images/cart.svg">
+            </a>
+          </li>
+          <li class="nav-item d-flex ">
+            <a class="align-self-center p-2 cursor-pointer rounded-4 text-white  orange-bg" (click)="changeLang()">
+                <label class="cursor-pointer px-1">{{"currentLang"|translate}} </label>
+               
+            </a>
+          </li>
+        </div>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+  

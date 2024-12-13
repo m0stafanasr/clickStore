@@ -1,0 +1,88 @@
+
+<div class="container-fluid bg-white">
+    <form #productForm="ngForm" (ngSubmit)="productForm.form.valid && addNew(product)">
+    <div class="row p-2">
+        <div class="col-6 ">
+         <h3> {{productId?'editProduct':'addProduct'|translate}} </h3>  
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+            <mat-icon class="cursor-pointer" (click)="close()">close</mat-icon>
+        </div>
+    </div>
+    <div class="row my-1">
+        <div class="col-3">{{"title"|translate}}</div>
+        <div class="col-9">
+            <input required class="form-control" type="text" name="title" [(ngModel)]="product.title" #title="ngModel">
+        </div>
+        <div class="col-12" *ngIf="title.invalid && (productForm.submitted || title.touched)">
+            <label class="text-danger fs-14">
+                {{"required"|translate}}
+            </label>
+        </div>
+    </div>
+    <div class="row my-1">
+        <div class="col-3">
+            {{"price"|translate}}
+        </div>
+        <div class="col-9">
+            <input required class="form-control" #price="ngModel" name="price" [(ngModel)]="product.price">
+        </div>
+        <div class="col-12" *ngIf="price.invalid && (productForm.submitted || price.touched)">
+            <label class="text-danger fs-14">
+                {{"required"|translate}}
+            </label>
+        </div>
+    </div>
+    <div class="row my-1">
+        <div class="col-3">
+            {{"image"|translate}}
+        </div>
+        <div class="col-9">
+           <input type="file" accept="*/png" [(ngModel)]="product.image" #image="ngModel" name="image" >
+        </div>
+        <div class="col-12" *ngIf="image.invalid && (productForm.submitted || image.touched)">
+            <label class="text-danger fs-14">
+                {{"required"|translate}}
+            </label>
+        </div>
+    </div>
+    <div class="row my-1">
+        <div class="col-3">
+            {{"category"|translate}}
+        </div>
+        <div class="col-9">
+            <select required [(ngModel)]="product.category" name="category" #category="ngModel" class="py-1 border-secondary rounded-3">
+                <option *ngFor="let category of categories" [value]="category" >{{category}}</option>
+            </select>
+        </div>
+        <div class="col-12" *ngIf="category.invalid && (productForm.submitted || category.touched)">
+            <label class="text-danger fs-14">
+                {{"required"|translate}}
+            </label>
+        </div>
+    </div>
+    <div class="row my-1">
+        <div class="col-3">{{"description"|translate}}</div>
+        <div class="col-9">
+            <textarea required [(ngModel)]="product.description" name="description" class="form-control" #description="ngModel" rows="3">
+                
+            </textarea>
+        </div>
+        <div class="col-12" *ngIf="description.invalid && (productForm.submitted || description.touched)">
+            <label class="text-danger fs-14">
+                {{"required"|translate}}
+            </label>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-end mb-2">
+        
+        <div class="col-lg-6 col-md-12 text-center d-inline-flex">
+            <button type="submit" class="mx-1 btn btn-warning orange-bg">
+                {{"save"|translate}}
+            </button>
+            <button type="reset" (click)="close()" class="mx-1 btn  btn-orange-outline">
+                {{"cancel"|translate}}
+            </button>
+        </div>
+    </div></form>
+</div>

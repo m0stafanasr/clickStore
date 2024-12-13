@@ -1,0 +1,39 @@
+{
+    "clickStore":"Click Mart",
+    "currentLang":"ع",
+    "Notregistered":"user name is not registered",
+    "wrongPass":"Wrong password",
+    "Search":"Search",
+    "common":{
+        "signIn":"Sign In",
+        "signWithEmail":"Sign in with email and password",
+       "userName":"User name",
+        "password":"Password",
+        "EGP":"EGP",
+        "logOut":"Logout"
+    },
+    "main":{
+        "Home":"Home",
+        "Categories":"Categories",
+        "cart":"Cart"
+    },
+    "products":{
+        "allOnline":"shop all online",
+        "getYourDreamItemsWithAclick":"All what you dream of through your hands"
+    },
+    "id":"ID", 
+    "title":"Title",
+    "description":"Description", 
+    "image":"Image", 
+    "category":"Category", 
+    "price":"Price",
+    "actions":"Actions",
+    "addNew":"Add new",
+    "editProduct":"Edit product",
+    "addProduct":"Add product",
+    "save":"Save",
+    "cancel":"Cancel",
+    "areYouSure":"Are you sure you want to delete this product?",
+    "confirm":"Confirm",
+    "required":"Required"
+}

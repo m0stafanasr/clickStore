@@ -1,0 +1,39 @@
+{
+    "clickStore":"كليك مارت",
+    "currentLang":"En",
+    "Notregistered":"أسم المستخدم غير مسجل",
+    "wrongPass":"كلمة السر غير صحيحة",
+    "Search":"بحث",
+    "common":{
+        "signIn":"تسجيل الدخول",
+        "signWithEmail":"تسجيل الدخول بأسم المستخدم ورقم المرور",
+        "userName":"أسم المستخدم",
+        "password":"كلمة السر",
+        "EGP":"ج.م",
+        "logOut":"تسجيل الخروج"
+    },
+    "main":{
+        "Home":"الرئيسية",
+        "Categories":"الأقسام",
+        "cart":"العربة"
+    },
+    "products":{
+        "allOnline":"تسوق بالكامل اونلاين",
+        "getYourDreamItemsWithAclick":"كل ما تحلم به في متناول يديك"
+    },
+    "id":"رقم", 
+    "title":"الأسم",
+    "description":"الوصف", 
+    "image":"الصورة", 
+    "category":"الفئة", 
+    "price":"السعر",
+    "actions":"الأجراءات",
+    "addNew":"إضافة جديد",
+    "editProduct":"تعديل المنتج",
+    "addProduct":"إضافة منتج",
+    "save":"حفظ",
+    "cancel":"إلغاء",
+    "areYouSure":"هل أنت متأكد أنك تريد حذف المنتج؟",
+    "confirm":"تأكيد",
+    "required":"مطلوب"
+}
